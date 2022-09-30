@@ -9,7 +9,10 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react-hooks/recommended',
   ],
-
+  parserOptions: {
+    sourceType: 'module',
+    allowImportExportEverywhere: true,
+  },
   plugins: ['react', 'react-hooks', '@typescript-eslint', 'prettier'],
   overrides: [
     {

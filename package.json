@@ -1,6 +1,6 @@
 {
   "name": "packagexdrivers",
-  "version": "0.0.1",
+  "version": "0.0.2-dev.7",
   "private": true,
   "scripts": {
     "android": "react-native run-android",
@@ -9,7 +9,10 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "preci": "rm -fr node_modules",
+    "ci": "yarn install --frozen-lockfile",
+    "test:ci": "jest --json --outputFile=jest-report.json"
   },
   "dependencies": {
     "@commitlint/cli": "^17.1.2",

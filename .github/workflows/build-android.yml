@@ -94,9 +94,9 @@ jobs:
       - name: Upload artifact to App Center
         uses: wzieba/AppCenter-Github-Action@v1
         with:
-          appName: star/PackageXDrivers
+          appName: starwarrior516/PackageXDrivers
           token: ${{secrets.APPCENTER_TOKEN_ANDROID}}
-          group: UKInternal
-          file: android/app-release.aab
+          group: Sandbox
+          file: android/PackageXDrivers.aab
           notifyTesters: true
           debug: false

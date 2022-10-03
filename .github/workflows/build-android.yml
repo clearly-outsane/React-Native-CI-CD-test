@@ -92,7 +92,7 @@ jobs:
           java-version: 1.8
 
       - name: Upload artifact to App Center
-        uses: wzieba/AppCenter-Github-Action@v1.33
+        uses: wzieba/AppCenter-Github-Action@v1
         with:
           appName: starwarrior516/PackageXDrivers
           token: ${{secrets.APPCENTER_TOKEN_ANDROID}}
